@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Typing Game</h1>
+    </header>
+    <div class="container">
+      <div class="timediv">
+        <p>Type the given word with in <span id="time">5</span> second</p>
+      </div>
+      <main>
+        <div class="text">
+          <h1 id="text">Hello World</h1>
+        </div>
+        <div class="input">
+          <input
+            type="text"
+            name="text"
+            id="inputText"
+            placeholder="Start typing..."
+            autocomplete="off"
+          />
+        </div>
+        <div class="popupCont" id="popup"></div>
+        <div class="countCont">
+          <div class="leftCount">
+            <p>time :</p>
+            <span id="timeLeft">5</span>
+          </div>
+          <div class="rightCount">
+            <p>Count :</p>
+            <span id="count">0</span>
+          </div>
+        </div>
+        <form class="levelCont">
+          <div class="mode">
+            <label for="level">Select level</label>
+            <select name="level" id="level">
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+              <option value="random">Random</option>
+            </select>
+          </div>
+        </form>
+        <div class="scoreboard">
+          <p>Last highscore is <span id="highScore">0</span></p>
+        </div>
+      </main>
+    </div>
+    <p id="create">Created by DINESH</p>
+    <script src="./script.js"></script>
+  </body>
+</html>
